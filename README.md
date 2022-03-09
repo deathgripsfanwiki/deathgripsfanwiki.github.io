@@ -1,2 +1,0 @@
-# deathgripsfanwiki.github.io
-ayo
