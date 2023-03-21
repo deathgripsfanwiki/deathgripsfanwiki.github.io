@@ -1,69 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<link rel="icon" href="images/favicon.ico"/>
-<style>
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: navajowhite;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: pink;
-  background-color: transparent;
-  text-decoration: underline;
-}
-</style>
-<body background="images/background.gif">
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>DEATHGRIPSFANWIKI.NET</title>
+	<title>My Website</title>
 	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			font-family: serif;
-			justify-content: center;
-			align-items: center;
-			display: flex;
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+			margin: auto;
 		}
 
-		div {
-			content: '';
-			font-size: 3em;
-			position: absolute;
-			top: 45%;
-			left: 50%;
-			transform: translate(-50%, -50%);
+		@media screen and (max-width: 768px) {
+			img {
+				max-width: 50%;
+				transform: scale(0.75);
+			}
 		}
 
-		h2 {
-			color: white;
-			text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5),
-				2px -2px 0 rgba(255, 255, 255, 0.9);
+		@media screen and (max-width: 480px) {
+			img {
+				max-width: 100%;
+				transform: scale(0.75);
+			}
+		}
+
+		.second-img {
+			margin-bottom: 40px;
 		}
 	</style>
 </head>
-
 <body>
-	<div>
-	<center>
-		<h2>
-			<a href="index.html"><p style="text-align:center"><img src="images/banner.png" style="width:40vw; min-width:80px;"/p /a><br>
-			<a href="conspiracy.html"><p style="text-align:center;"><img src="images/conspiracy.png" style="width:20vw; min-width: 20px;"></p></a>
-			<a href="https://www.last.fm/user/deathgripsfanwi"><p style="text-align:center;"><img src="images/music.png" style="width:20vw; min-width: 20px;"></p></a>
-		</h2>
-	</center>
-	</div>
+	<body background="images/background.gif">
+	<img src="images/banner.png" alt="Image">
+	<img src="images/conspiracy.png" alt="Image 2" class="second-img">
+	<img src="images/music.png" alt="Image 3">
 </body>
 </html>
